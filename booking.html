@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KBS | How to Book</title>
-    <meta name="description" content="Private and discreet booking process for KBS Guest House.">
+    <title>KBS Services | How to Book</title>
+    <meta name="description" content="Discreet and simple booking process for KBS Private Guest House.">
     <style>
         :root {
             --dark: #0A0A0A;
@@ -17,63 +17,49 @@
             font-family: system-ui, -apple-system, sans-serif;
             background: var(--dark);
             color: #D4CFC7;
-            line-height: 1.7;
+            line-height: 1.8;
         }
         nav {
-            background: rgba(10,10,10,0.95);
+            background: rgba(10,10,10,0.98);
             backdrop-filter: blur(12px);
             position: sticky;
             top: 0;
             z-index: 100;
-            border-bottom: 1px solid rgba(191,164,111,0.1);
+            border-bottom: 1px solid rgba(191,164,111,0.12);
         }
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        nav a {
-            color: var(--light);
-            text-decoration: none;
-            padding: 22px 32px;
-            font-weight: 500;
-            transition: all 0.4s;
-        }
+        nav ul { list-style: none; display: flex; justify-content: center; flex-wrap: wrap; }
+        nav a { color: var(--light); text-decoration: none; padding: 22px 32px; font-weight: 500; transition: all 0.4s; }
         nav a:hover { color: var(--accent); }
-        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-        header {
-            background: linear-gradient(rgba(10,10,10,0.85), rgba(10,10,10,0.9));
+
+        .hero {
+            background: linear-gradient(rgba(10,10,10,0.85), rgba(10,10,10,0.9)), url('https://picsum.photos/id/1015/1920/900') center/cover;
             text-align: center;
-            padding: 140px 20px 100px;
+            padding: 180px 20px 120px;
         }
-        h1 { font-size: 3.2rem; color: var(--accent); letter-spacing: 4px; }
+        h1 { font-size: 3.6rem; color: var(--accent); letter-spacing: 6px; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
         section { padding: 100px 0; }
         .card {
             background: var(--charcoal);
-            padding: 50px;
+            padding: 60px 40px;
             border-radius: 16px;
-            margin: 40px 0;
-            border: 1px solid rgba(191,164,111,0.1);
+            border: 1px solid rgba(191,164,111,0.15);
         }
         .btn {
             background: transparent;
             color: var(--accent);
             border: 2px solid var(--accent);
-            padding: 16px 42px;
+            padding: 18px 48px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
             display: inline-block;
-            transition: all 0.4s;
+            margin: 15px;
         }
-        .btn:hover {
-            background: var(--accent);
-            color: var(--dark);
-        }
+        .btn:hover { background: var(--accent); color: var(--dark); }
         footer {
             background: #050505;
-            padding: 60px 20px;
+            padding: 80px 20px 50px;
             text-align: center;
             color: #888;
         }
@@ -81,49 +67,47 @@
 </head>
 <body>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="booking.html">How to Book</a></li>
-            <li><a href="rates.html">Rates</a></li>
-            <li><a href="therapists.html">Therapists</a></li>
-            <li><a href="join-us.html">Join Us</a></li>
-        </ul>
-    </nav>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="therapists.html">Therapists</a></li>
+        <li><a href="booking.html">How to Book</a></li>
+        <li><a href="rates.html">Rates</a></li>
+        <li><a href="join-us.html">Join Us</a></li>
+    </ul>
+</nav>
 
-    <header>
-        <div class="container">
-            <h1>How to Book</h1>
-            <p style="font-size:1.3rem; color:var(--accent); margin-top:20px;">Discretion is built into every step.</p>
-        </div>
-    </header>
-
+<div class="hero">
     <div class="container">
-        <section>
-            <div class="card">
-                <h2 style="color:var(--accent); margin-bottom:30px;">Booking Process</h2>
-                <ol style="font-size:1.15rem; line-height:2.1;">
-                    <li>Call or WhatsApp Shelley directly.</li>
-                    <li>Share your preferred date, time, and any specific preferences.</li>
-                    <li>Receive confirmation and arrival instructions.</li>
-                    <li>Arrive via private walled entrance. Complete discretion guaranteed.</li>
-                </ol>
-            </div>
-
-            <p style="text-align:center; font-size:1.2rem; max-width:700px; margin:60px auto;">
-                All communications are handled with the utmost confidentiality.<br>
-                No records are kept beyond what is necessary for your booking.
-            </p>
-
-            <div style="text-align:center; margin:60px 0;">
-                <a href="tel:0751667642" class="btn">Call Shelley • 075 166 7642</a>
-            </div>
-        </section>
+        <h1>How to Book</h1>
+        <p style="color:var(--accent); font-size:1.4rem; margin-top:20px;">Discretion at every step</p>
     </div>
+</div>
 
-    <footer>
-        <p>Trust in Silence</p>
-        <p style="margin-top:30px; font-size:0.9rem;">© KBS Private • Rosebank, Johannesburg</p>
-    </footer>
+<div class="container">
+    <section>
+        <div class="card">
+            <h2 style="color:var(--accent); text-align:center; margin-bottom:40px;">Simple Private Process</h2>
+            <ol style="font-size:1.22rem; line-height:2.3; max-width:720px; margin:0 auto;">
+                <li>Contact Shelley directly (Call or WhatsApp).</li>
+                <li>Share your preferred date, time &amp; any special requests.</li>
+                <li>Receive confirmation and secure arrival instructions.</li>
+                <li>Private walled entrance &amp; exit — complete confidentiality guaranteed.</li>
+            </ol>
+        </div>
+
+        <div style="text-align:center; margin:70px 0;">
+            <a href="tel:0751667642" class="btn">Call Shelley Now</a>
+            <a href="https://wa.me/27751667642" target="_blank" class="btn" style="background:#25D366; color:white; border:none;">WhatsApp Shelley</a>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p><strong>Shelley</strong> • <a href="tel:0751667642" style="color:var(--accent)">075 166 7642</a></p>
+    <p style="margin-top:25px;">Trust in Silence</p>
+    <p style="margin-top:40px; font-size:0.9rem;">© 2026 KBS Services • Johannesburg</p>
+</footer>
+
 </body>
 </html>
