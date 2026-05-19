@@ -3,34 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KBS | Rates</title>
+    <title>KBS Services | Rates</title>
     <style>
-        /* Same <style> block as booking.html - copy the full style from above for consistency */
         :root { --dark: #0A0A0A; --charcoal: #121212; --accent: #BFA46F; --light: #E5E0D8; }
-        /* ... (include the full CSS from booking.html here) ... */
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family: system-ui, sans-serif; background: var(--dark); color: #D4CFC7; line-height: 1.8; }
+        nav { background: rgba(10,10,10,0.98); backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(191,164,111,0.12); }
+        nav ul { list-style: none; display: flex; justify-content: center; flex-wrap: wrap; }
+        nav a { color: var(--light); text-decoration: none; padding: 22px 32px; font-weight: 500; }
+        nav a:hover { color: var(--accent); }
+        .hero { background: linear-gradient(rgba(10,10,10,0.85), rgba(10,10,10,0.9)); text-align: center; padding: 180px 20px 120px; }
+        h1 { font-size: 3.6rem; color: var(--accent); letter-spacing: 6px; }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+        .card {
+            background: var(--charcoal);
+            padding: 70px 50px;
+            border-radius: 16px;
+            text-align: center;
+            border: 1px solid rgba(191,164,111,0.15);
+        }
+        footer { background: #050505; padding: 80px 20px 50px; text-align: center; color: #888; }
     </style>
 </head>
 <body>
-    <!-- Same nav as above -->
 
-    <header>
-        <div class="container">
-            <h1>Rates</h1>
-            <p style="color:var(--accent); font-size:1.3rem;">Premium Experience • Fixed House Fee</p>
-        </div>
-    </header>
+<nav><!-- Same nav as other pages --></nav>
 
+<div class="hero">
     <div class="container">
-        <section style="text-align:center;">
-            <div class="card">
-                <h2 style="color:var(--accent);">House Fee</h2>
-                <p style="font-size:2.4rem; margin:30px 0; color:var(--accent);">$• • •</p>
-                <p style="font-size:1.2rem;">Includes private room, secure parking, full facilities, and concierge support.</p>
-                <p style="margin-top:40px; opacity:0.8;">Therapist fees are arranged directly between you and the independent professional.</p>
-            </div>
-        </section>
+        <h1>Rates</h1>
     </div>
+</div>
 
-    <footer><!-- Same footer --></footer>
+<div class="container">
+    <section>
+        <div class="card">
+            <h2 style="color:var(--accent); margin-bottom:30px;">House Fee</h2>
+            <p style="font-size:2.8rem; color:var(--accent); margin:30px 0;">Contact for Details</p>
+            <p style="font-size:1.2rem; max-width:600px; margin:0 auto;">
+                Includes private room, secure walled parking, full facilities, concierge service and absolute discretion.
+            </p>
+            <p style="margin-top:50px; opacity:0.8;">Therapist fees are arranged directly between you and the independent professional.</p>
+        </div>
+    </section>
+</div>
+
+<footer><!-- Same footer --></footer>
 </body>
 </html>
