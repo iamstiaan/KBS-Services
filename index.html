@@ -3,30 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Massage Inc | Private Guest House • Rosebank</title>
-    <meta name="description" content="Discreet luxury private guest house in Rosebank, Johannesburg. Maximum privacy guaranteed.">
+    <title>KBS | Private Guest House • Rosebank</title>
+    <meta name="description" content="Discreet luxury private guest house in Rosebank, Johannesburg. Maximum privacy and confidentiality guaranteed.">
     <style>
         :root {
-            --primary: #c41e5c;
-            --gold: #d4af37;
-            --dark: #0f0f0f;
-            --light: #f5e8e8;
+            --dark: #0A0A0A;
+            --charcoal: #121212;
+            --accent: #BFA46F;     /* Warm bronze-gold */
+            --teal: #0A3C3A;
+            --light: #E5E0D8;
         }
-        body {
-            font-family: 'Segoe UI', system-ui, sans-serif;
+        
+        * {
             margin: 0;
-            background: var(--dark);
-            color: #e8d5d5;
-            line-height: 1.7;
+            padding: 0;
+            box-sizing: border-box;
         }
+        
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            background: var(--dark);
+            color: #D4CFC7;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+        
         nav {
-            background: rgba(15,15,15,0.95);
-            backdrop-filter: blur(10px);
+            background: rgba(10,10,10,0.95);
+            backdrop-filter: blur(12px);
             position: sticky;
             top: 0;
             z-index: 100;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+            border-bottom: 1px solid rgba(191,164,111,0.1);
         }
+        
         nav ul {
             list-style: none;
             margin: 0;
@@ -35,90 +45,153 @@
             justify-content: center;
             flex-wrap: wrap;
         }
+        
         nav a {
-            color: white;
+            color: var(--light);
             text-decoration: none;
-            padding: 20px 30px;
+            padding: 22px 32px;
             display: block;
             font-weight: 500;
-            transition: all 0.3s;
+            letter-spacing: 0.5px;
+            transition: all 0.4s ease;
         }
+        
         nav a:hover {
-            color: var(--gold);
-            background: rgba(196,30,92,0.2);
+            color: var(--accent);
+            background: rgba(191,164,111,0.08);
         }
+        
         header {
-            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)), url('https://via.placeholder.com/1920x800/1a0f12/ffffff?text=Massage+Inc') center/cover;
+            background: linear-gradient(rgba(10,10,10,0.8), rgba(10,10,10,0.9)), 
+                        url('https://via.placeholder.com/1920x900/0A0A0A/ffffff?text=KBS+Private') center/cover no-repeat;
             color: white;
             text-align: center;
-            padding: 180px 20px 120px;
+            padding: 220px 20px 160px;
+            position: relative;
         }
-        h1 {
-            font-size: 3.2rem;
+        
+        .logo {
+            font-size: 4.8rem;
+            font-weight: 700;
+            letter-spacing: 8px;
+            color: var(--accent);
+            margin-bottom: 12px;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.6);
+        }
+        
+        .subtitle {
+            font-size: 1.45rem;
+            color: var(--accent);
             letter-spacing: 3px;
-            color: white;
-            margin: 0 0 10px;
+            margin-bottom: 20px;
         }
-        .subtitle { font-size: 1.35rem; color: var(--gold); }
-        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-        section { padding: 80px 0; }
+        
+        .tagline {
+            font-size: 1.25rem;
+            max-width: 620px;
+            margin: 0 auto 40px;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        section {
+            padding: 100px 0;
+        }
+        
+        h2 {
+            color: var(--accent);
+            text-align: center;
+            font-size: 2.4rem;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+        }
+        
         .btn {
-            background: var(--primary);
-            color: white;
-            padding: 16px 38px;
+            background: transparent;
+            color: var(--accent);
+            border: 2px solid var(--accent);
+            padding: 16px 42px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
             display: inline-block;
-            margin: 12px 10px 12px 0;
-            transition: all 0.3s;
-            box-shadow: 0 4px 15px rgba(196,30,92,0.4);
+            margin: 12px 8px;
+            transition: all 0.4s ease;
+            letter-spacing: 1px;
         }
+        
         .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(196,30,92,0.5);
+            background: var(--accent);
+            color: var(--dark);
+            transform: translateY(-4px);
         }
-        .gold { color: var(--gold); }
+        
+        .section-dark {
+            background: var(--charcoal);
+        }
+        
+        footer {
+            background: #050505;
+            padding: 80px 20px 40px;
+            text-align: center;
+            color: #888;
+            border-top: 1px solid rgba(191,164,111,0.1);
+        }
+        
+        .gold { color: var(--accent); }
     </style>
 </head>
 <body>
 
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="booking.html">How to Book</a></li>
-        <li><a href="rates.html">Rates</a></li>
-        <li><a href="therapists.html">Therapists</a></li>
-        <li><a href="join-us.html">Join Us</a></li>
-    </ul>
-</nav>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="booking.html">How to Book</a></li>
+            <li><a href="rates.html">Rates</a></li>
+            <li><a href="therapists.html">Therapists</a></li>
+            <li><a href="join-us.html">Join Us</a></li>
+        </ul>
+    </nav>
 
-<header>
+    <header>
+        <div class="container">
+            <div class="logo">KBS</div>
+            <p class="subtitle">PRIVATE GUEST HOUSE • ROSEBANK</p>
+            <p class="tagline">Discreet luxury. Absolute privacy.</p>
+            <a href="booking.html" class="btn">Begin Your Visit</a>
+        </div>
+    </header>
+
     <div class="container">
-        <h1>MASSAGE INC</h1>
-        <p class="subtitle">Private Guest House • Rosebank, Johannesburg</p>
-        <p style="max-width:700px; margin:30px auto; font-size:1.2rem;">Where discretion meets elegance.</p>
+        <section>
+            <h2>Welcome</h2>
+            <p style="text-align:center; font-size:1.22rem; max-width:720px; margin:0 auto;">
+                KBS offers a refined, secure, and completely private environment in the heart of Rosebank, Johannesburg.<br><br>
+                Walled parking with private entry and exit ensures that your visit remains entirely confidential.
+            </p>
+        </section>
+
+        <section class="section-dark" style="border-radius:16px; padding:70px 40px; text-align:center;">
+            <h2 style="margin-bottom:30px;">Independent Therapists</h2>
+            <p style="font-size:1.15rem; max-width:680px; margin:0 auto 30px;">
+                All ladies are independent professionals who maintain their own profiles and standards.
+            </p>
+            <p style="font-size:1.15rem; max-width:680px; margin:0 auto;">
+                Shelley personally ensures the perfect match based on your preferences while upholding the highest levels of discretion.
+            </p>
+        </section>
     </div>
-</header>
 
-<div class="container">
-    <section>
-        <h2 style="color:var(--gold); text-align:center;">Welcome</h2>
-        <p style="text-align:center; font-size:1.15rem;">Experience complete privacy in our exclusive, secure venue.<br>
-        No one will see you or the lady you choose. Walled parking with private entry &amp; exit.</p>
-    </section>
-
-    <section style="background: linear-gradient(135deg, #1a0f12, #2b1a20); border-radius:16px; padding:50px; text-align:center;">
-        <h2>Independent Therapists</h2>
-        <p>All ladies are 100% independent and maintain their own professional advertising profiles.</p>
-        <p>Shelley will personally assist with matching you to the perfect lady based on your preferences.</p>
-    </section>
-</div>
-
-<footer style="background:#0a0a0a; padding:50px; text-align:center; color:#aaa;">
-    <p><strong>Shelley</strong> • <a href="tel:0751667642" style="color:var(--gold);">075 166 7642</a></p>
-    <p>Your discretion is our highest priority.</p>
-</footer>
+    <footer>
+        <p><strong>Shelley</strong> • <a href="tel:0751667642" class="gold" style="text-decoration:none;">075 166 7642</a></p>
+        <p style="margin-top:20px; opacity:0.7;">Trust in Silence</p>
+        <p style="margin-top:40px; font-size:0.9rem;">© KBS Private. Your privacy is absolute.</p>
+    </footer>
 
 </body>
 </html>
