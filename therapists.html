@@ -3,42 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KBS | Our Therapists</title>
-    <meta name="description" content="Meet our independent premium therapists at KBS Private Guest House.">
+    <title>KBS Services | Our Therapists</title>
     <style>
-        :root {
-            --dark: #0A0A0A;
-            --charcoal: #121212;
-            --accent: #BFA46F;
-            --light: #E5E0D8;
-        }
+        :root { --dark: #0A0A0A; --charcoal: #121212; --accent: #BFA46F; --light: #E5E0D8; }
         * { margin:0; padding:0; box-sizing:border-box; }
-        body {
-            font-family: system-ui, -apple-system, sans-serif;
-            background: var(--dark);
-            color: #D4CFC7;
-            line-height: 1.7;
-        }
-        nav { /* Same nav as index.html */ 
-            background: rgba(10,10,10,0.97); backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 100;
-            border-bottom: 1px solid rgba(191,164,111,0.12);
-        }
+        body { font-family: system-ui, sans-serif; background: var(--dark); color: #D4CFC7; }
+        nav { background: rgba(10,10,10,0.98); backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(191,164,111,0.12); }
         nav ul { list-style: none; display: flex; justify-content: center; flex-wrap: wrap; }
-        nav a { color: var(--light); text-decoration: none; padding: 22px 32px; font-weight: 500; transition: all 0.4s; }
+        nav a { color: var(--light); text-decoration: none; padding: 22px 32px; font-weight: 500; }
         nav a:hover { color: var(--accent); }
-
         .container { max-width: 1180px; margin: 0 auto; padding: 0 20px; }
-        .hero {
-            text-align: center;
-            padding: 140px 20px 80px;
-            background: linear-gradient(rgba(10,10,10,0.8), rgba(10,10,10,0.9));
-        }
-        h1 { font-size: 3.4rem; color: var(--accent); letter-spacing: 6px; }
-        .hero-subtitle { font-size: 1.25rem; max-width: 720px; margin: 20px auto; color: #B8B0A0; }
-
+        .hero { text-align: center; padding: 160px 20px 80px; }
+        h1 { font-size: 3.6rem; color: var(--accent); letter-spacing: 6px; }
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
             gap: 40px;
             padding: 60px 0;
         }
@@ -46,121 +25,67 @@
             background: var(--charcoal);
             border-radius: 16px;
             overflow: hidden;
-            transition: all 0.5s ease;
+            transition: all 0.5s;
             border: 1px solid rgba(191,164,111,0.1);
         }
-        .card:hover {
-            transform: translateY(-12px);
-            box-shadow: 0 30px 60px rgba(0,0,0,0.6);
-            border-color: var(--accent);
-        }
-        .card-image {
-            height: 380px;
-            overflow: hidden;
-        }
-        .card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.6s ease;
-        }
-        .card:hover img { transform: scale(1.06); }
-        .card-info {
-            padding: 28px 24px;
-            text-align: center;
-        }
-        .card-info h3 {
-            color: var(--accent);
-            font-size: 1.55rem;
-            margin-bottom: 8px;
-        }
-        .details { color: #A89F8F; margin-bottom: 12px; }
-        .description { font-style: italic; margin-bottom: 24px; }
+        .card:hover { transform: translateY(-15px); border-color: var(--accent); }
+        .card-image { height: 420px; overflow: hidden; }
+        .card img { width: 100%; height: 100%; object-fit: cover; transition: 0.6s; }
+        .card:hover img { transform: scale(1.08); }
+        .card-info { padding: 30px 24px; text-align: center; }
+        .card-info h3 { color: var(--accent); font-size: 1.65rem; margin-bottom: 10px; }
+        .details { color: #B8A88F; margin-bottom: 20px; }
         .btn {
-            background: transparent;
-            color: var(--accent);
-            border: 2px solid var(--accent);
-            padding: 12px 36px;
+            padding: 12px 28px;
             border-radius: 50px;
+            margin: 6px 4px;
             text-decoration: none;
             font-weight: 600;
-            transition: all 0.4s;
+            display: inline-block;
         }
-        .btn:hover {
-            background: var(--accent);
-            color: var(--dark);
-        }
-        footer { /* Same as index */ 
-            background: #050505; padding: 70px 20px 40px; text-align: center; color: #888;
-        }
+        .btn-call { background: transparent; color: var(--accent); border: 2px solid var(--accent); }
+        .btn-whatsapp { background: #25D366; color: white; border: none; }
+        .btn:hover { transform: translateY(-3px); }
     </style>
 </head>
 <body>
 
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="booking.html">How to Book</a></li>
-        <li><a href="rates.html">Rates</a></li>
-        <li><a href="therapists.html">Therapists</a></li>
-        <li><a href="join-us.html">Join Us</a></li>
-    </ul>
-</nav>
+<nav><!-- Same nav as index --></nav>
 
 <div class="hero">
     <div class="container">
         <h1>Our Therapists</h1>
-        <p class="hero-subtitle">Exclusive independent professionals. Each chosen for quality, discretion, and presence.</p>
+        <p style="max-width:720px; margin:25px auto; font-size:1.25rem;">Premium independent professionals • Personally matched by Shelley</p>
     </div>
 </div>
 
 <div class="container">
     <div class="grid">
         <div class="card">
-            <div class="card-image">
-                <img src="https://picsum.photos/id/1011/600/800" alt="Nora">
-            </div>
+            <div class="card-image"><img src="https://picsum.photos/id/1011/600/800" alt="Nora"></div>
             <div class="card-info">
                 <h3>Nora</h3>
-                <div class="details">28 • Linksfield</div>
-                <div class="description">Sexy & Curvy</div>
-                <a href="tel:0751667642" class="btn">Contact Shelley</a>
+                <div class="details">28 • Linksfield • Sexy & Curvy</div>
+                <a href="bio-nora.html" class="btn btn-call">More Info</a>
+                <a href="tel:0751667642" class="btn btn-call">Call Now</a>
+                <a href="https://wa.me/27751667642" target="_blank" class="btn btn-whatsapp">WhatsApp</a>
             </div>
         </div>
 
+        <!-- Add more cards similarly -->
         <div class="card">
-            <div class="card-image">
-                <img src="https://picsum.photos/id/1027/600/800" alt="Sophia">
-            </div>
+            <div class="card-image"><img src="https://picsum.photos/id/1027/600/800" alt="Sophia"></div>
             <div class="card-info">
                 <h3>Sophia</h3>
-                <div class="details">26 • Rosebank</div>
-                <div class="description">Petite & Elegant</div>
-                <a href="tel:0751667642" class="btn">Contact Shelley</a>
+                <div class="details">26 • Rosebank • Petite & Elegant</div>
+                <a href="bio-sophia.html" class="btn btn-call">More Info</a>
+                <a href="tel:0751667642" class="btn btn-call">Call Now</a>
+                <a href="https://wa.me/27751667642" target="_blank" class="btn btn-whatsapp">WhatsApp</a>
             </div>
         </div>
-
-        <div class="card">
-            <div class="card-image">
-                <img src="https://picsum.photos/id/669/600/800" alt="Aurora">
-            </div>
-            <div class="card-info">
-                <h3>Aurora</h3>
-                <div class="details">29 • Johannesburg</div>
-                <div class="description">Athletic & Sensual</div>
-                <a href="tel:0751667642" class="btn">Contact Shelley</a>
-            </div>
-        </div>
-
-        <!-- Add more cards as needed -->
     </div>
 </div>
 
-<footer>
-    <p>For availability and matching, contact <strong>Shelley</strong></p>
-    <p><a href="tel:0751667642" style="color:var(--accent); font-size:1.3rem;">075 166 7642</a></p>
-    <p style="margin-top:40px;">Trust in Silence</p>
-</footer>
-
+<footer><!-- Same as index.html --></footer>
 </body>
 </html>
